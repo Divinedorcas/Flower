@@ -1,0 +1,81 @@
+
+
+{layout 'layouts/mainlayout_dashboard.latte'}
+
+{block title}Dashboard{/block}
+
+{block content}
+<link rel="stylesheet" href="/static/css/dashboard.css">
+<section id="__">
+    <div id="sidebar" >
+       <a href="#">{$user["username"] ?? "User"}</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div id="maincontent">
+        <h1>Hello World</h1> 
+
+          <h1>Create Products</h1>
+         <form method="POST" enctype="multipart/form-data" id="create-product-id">
+          
+            <input type="text" name="name" placeholder="name" /><br/>
+              <input type="file" name="image" placeholder="image" /><br/>
+                <input type="text" name="price" placeholder="price" /><br/>
+                  <input type="text" name="desc" placeholder="desc" /><br/>
+                  <button type="button" onclick="CreateProduct()">
+                Submit
+            </button>
+
+        </form>
+        
+
+        <div id="UpdateSection">
+            <h1>Update Product</h1> 
+        
+            <form method="post" enctype="multipart/form-data" name="update-product">
+                <input type="text" name="id" hidden /><br>
+                <input type="text" name="name" placeholder="name" /><br>
+                <input type="file" name="image" placeholder="image" /><br>
+                <input type="text" name="price" placeholder="price" /><br>
+                <input type="text" name="desc" placeholder="desc" /><br>
+                <button type="button" onclick="UpdateProduct()">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+
+
+
+        
+          <section id="ProductsContainer">
+            <h1>Products</h1>
+
+            <section id="products_container_seller">
+                {for $i = 0; $i < 4; $i++}
+                <div class="product-card">
+                    <img src="/static/images/product.avif" alt="">
+                    <h4>Product Title </h4>
+                    <p>desc</p>
+                    <p>1000 NGN</p>
+                    <div>
+                        <button>Add To Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                {/for}
+            </section>
+        </section> 
+
+
+    </div>
+
+</section>
+
+
+
+
+{/block}

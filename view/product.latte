@@ -1,0 +1,23 @@
+
+
+{layout 'layouts/mainlayout.latte'}
+
+{block title}My amazing blog{/block}
+
+{block content}
+    <h1>product Page</h1>
+	
+     <h3>{$massage ?? ""}</h3>
+    <form method="POST">
+    <input type="text" name="image" placeholder="enter imgalt"> 
+     <input type="text" name="name" placeholder="enter productname">
+    <input type="number" name="price" placeholder="enter productprice">
+      <input type="text" name="desc" placeholder="enter productdesc">
+       <input type="number" name="owner_id" placeholder="owner_id">
+    <input type="submit" name="add">
+    </form>
+    
+{/block}
+{block footer}
+<p> No Copyright</p>
+{/block}

@@ -1,0 +1,33 @@
+
+#__{
+    display: flex;
+    align-items: center;
+}
+
+#sidebar{
+    min-height: 80vh;
+    background-color: rgb(232, 232, 232);
+    padding: 10px;
+    min-width: 100px;
+    width: 10%;
+}
+#maincontent{
+    width: 90%;
+    min-height: 80vh;
+    padding: 10px;
+}
+#sidebar>a{
+    display: block;
+    text-align: center;
+    color: rgb(37, 37, 37);
+    padding: 10px 8px;
+    font-family: sans-serif;
+    transition: all 1s;
+    text-decoration: none;
+    border-bottom: solid rgb(37, 37, 37) 1px;
+}
+
+#sidebar>a:hover{
+    color: rgb(230, 230, 230);
+    background-color: black;
+}

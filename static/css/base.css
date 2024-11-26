@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.234);
+}
+/* nav logo */
+nav>img{
+    height: 80px;
+    width: 80px;
+}
+/* nav items */
+nav>ul{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+nav>ul>li{
+    margin: 5px;
+    padding: 5px 10px;
+}
+nav>ul>li>a{
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 8px 10px;
+    color: rgb(67, 67, 67);
+}
+
+
+
+/* input and buttons */
+
+input{
+    outline: none;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+button{
+    outline: none;
+    border: none;
+    background-color: rgb(0, 157, 255);
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all 1s;
+}
+button:hover{
+    background-color: rgb(64, 182, 255);
+    color: rgb(243, 243, 243);
+    
+}
+
+
+#HeroContainer{
+    background-image: url("/static/images/photo-shopping.avif");
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.234);
+
+}
+
+#HeroContainer h1{
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+}
+#HeroContainer>div>p{
+    color: white;
+    text-align: center;
+}
+#HeroContainer>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#HeroContainer>div{
+    position: relative;
+    z-index: 10;
+}
+
+#HeroContainer>span{
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.241);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+}
+
+/* Products */
+
+#ProductsContainer{
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.234);
+    padding: 40px 20px;
+}
+
+.product-card{
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.234);
+    padding: 8px 5px;
+    margin: 8px;
+    width: fit-content;
+    border-radius: 16px;
+}
+.product-card>img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+#ProductsContainer>*{
+    margin: auto;
+    width: fit-content;
+}
+#ProductsContainer>section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+/* Footer */
+#footer{
+    background-color: rgb(47, 54, 57);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#footer a {
+    color: white;
+    text-decoration: none;
+    text-decoration: none;
+}
+#footer>ul{
+    list-style: none;
+}
+#footer p{
+    color: white;
+}

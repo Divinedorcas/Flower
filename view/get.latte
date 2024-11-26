@@ -1,0 +1,34 @@
+{layout 'layouts/mainlayout.latte'}
+
+{block title}Shopper Vision|HOME{/block}
+
+{block content}
+
+
+
+            <button onclick="GoToAuth()">Register</button>
+            <button onclick="GoToAuth()">Login</button>
+        
+
+<!-- Products -->
+<section id="ProductsContainer">
+    <h1>Products</h1>
+
+    <section>
+        {for $i = 0; $i < 4; $i++}
+        <div class="product-card">
+            <img src="/static/images/bag-1.avif" alt="">
+            <h4>Product Title </h4>
+            <p>desc</p>
+            <p>1000 NGN</p>
+            <div>
+                <button>Add To Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        {/for}
+    </section>
+</section>
+
+<script src="/static/js/links.js"></script>
+{/block}

@@ -1,0 +1,47 @@
+{layout 'layouts/mainlayout.latte'}
+
+{block title}Shopper Vision|HOME{/block}
+
+{block content}
+
+
+
+
+<!-- Hero -->
+ <section id="HeroContainer">
+    <span></span>
+    <div>
+        <h1>SHOPPER VISION</h1>
+        <p>motto motto motto motto motto</p>
+        <div>
+            <button onclick="GoToAuth()">Register</button>
+            <button onclick="GoToAuth()">Login</button>
+        </div>
+    </div>
+ </section>
+
+<!-- Products -->
+<section id="ProductsContainer">
+            <h1>Products</h1>
+
+            <section id="products_container_seller">
+                {for $i = 0; $i < 4; $i++}
+                <div class="product-card">
+                    <img src="/static/images/product.avif" alt="">
+                    <h4>Product Title </h4>
+                    <p>desc</p>
+                    <p>1000 NGN</p>
+                    <div>
+                        <button>Add To Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                {/for}
+            </section>
+        </section> 
+
+        <button onclick="addToCart()"> addtocart</button>
+
+<script src="/static/js/links.js"></script>
+<script src="/static/js/main.js"></script>
+{/block}

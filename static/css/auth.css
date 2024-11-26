@@ -1,0 +1,30 @@
+
+
+#AuthSection{
+    min-height: 60vh;
+    padding-top: 60px;
+    font-family: sans-serif;
+}
+
+#AuthSection>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#AuthSection>div>form{
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.234);
+    padding: 28px 20px;
+    margin: 8px;
+    width: fit-content;
+    border-radius: 16px;
+    min-width: 250px;
+}
+#AuthSection>div>form>label{
+    display: block;
+    font-size: small;
+}
+#AuthSection>div>form>input{
+    display: block;
+    width: -webkit-fill-available;
+}

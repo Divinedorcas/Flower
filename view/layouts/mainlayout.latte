@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>{block title}{/block}</title>
+	<link rel="stylesheet" href="/static/css/base.css">
+
+
+     <script src="https://kit.fontawesome.com/c05f53aabe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<nav>
+    <img src="/static/images/logo.jpg">
+    <form action="">
+        <input type="text" name="q">
+        <button>Search</button>
+    </form>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><button><i class="fa-solid fa-cart-plus"></i></button></li>
+    </ul>
+</nav>
+	<div id="content">
+		{block content}{/block}
+	</div>
+	<div id="footer">
+		{block footer}
+         <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Login</a></li>
+        <li><button>Cart</button></li>
+    </ul>
+        <p>&copy; Copyright 2008</p>
+        {/block}
+	</div>
+   
+</body>
+</html>
